@@ -107,6 +107,33 @@ O sistema deve permitir selecionar um período para consulta das informações a
 
 O sistema deve disponibilizar um menu para acesso aos diferentes módulos e funcionalidades disponíveis ao usuário.
 
+### RF009 - Consultar clientes
+
+O sistema deve permitir a visualização dos clientes cadastrados, apresentando informações como código, nome, plano, status e biometria.
+
+### RF010 - Buscar clientes
+
+O sistema deve permitir a busca de clientes utilizando os filtros disponíveis.
+
+### RF011 - Filtrar clientes
+
+O sistema deve permitir filtrar os clientes por código, nome, status, situação, plano e personal.
+
+### RF012 - Cadastrar novo cliente
+
+O sistema deve disponibilizar a opção "Novo Cliente" para realizar o cadastro de clientes.
+
+### RF013 - Visualizar cliente
+
+O sistema deve permitir acessar os dados de um cliente cadastrado por meio da opção de visualização disponível na listagem.
+
+### RF014 - Excluir cliente
+
+O sistema deve disponibilizar uma opção para exclusão de clientes cadastrados.
+
+### RF015 - Exibir indicadores de clientes
+
+O sistema deve apresentar indicadores relacionados aos clientes, incluindo quantidade de clientes cadastrados, clientes ativos, clientes sem matrícula e clientes ausentes.
 ---
 
 ## 5. Observações
