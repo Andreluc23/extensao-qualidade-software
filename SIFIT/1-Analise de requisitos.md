@@ -79,62 +79,6 @@ Durante a navegação inicial foram identificados os seguintes módulos no menu:
 
 O sistema deve permitir que o usuário realize login informando suas credenciais de acesso.
 
-### RF002 - Validação de credenciais
-
-O sistema deve validar o login e a senha informados antes de permitir o acesso.
-
-### RF003 - Manter usuário conectado
-
-O sistema deve disponibilizar a opção "Manter conectado" na tela de autenticação.
-
-### RF004 - Recuperação de senha
-
-O sistema deve disponibilizar a opção "Esqueci minha senha" para recuperação do acesso.
-
-### RF005 - Acesso à página inicial
-
-Após uma autenticação válida, o sistema deve direcionar o usuário para a página inicial.
-
-### RF006 - Exibição do resumo da academia
-
-A página inicial deve apresentar informações resumidas relacionadas à situação e movimentação da academia.
-
-### RF007 - Seleção de período
-
-O sistema deve permitir selecionar um período para consulta das informações apresentadas na página inicial.
-
-### RF008 - Navegação entre módulos
-
-O sistema deve disponibilizar um menu para acesso aos diferentes módulos e funcionalidades disponíveis ao usuário.
-
-### RF009 - Consultar clientes
-
-O sistema deve permitir a visualização dos clientes cadastrados, apresentando informações como código, nome, plano, status e biometria.
-
-### RF010 - Buscar clientes
-
-O sistema deve permitir a busca de clientes utilizando os filtros disponíveis.
-
-### RF011 - Filtrar clientes
-
-O sistema deve permitir filtrar os clientes por código, nome, status, situação, plano e personal.
-
-### RF012 - Cadastrar novo cliente
-
-O sistema deve disponibilizar a opção "Novo Cliente" para realizar o cadastro de clientes.
-
-### RF013 - Visualizar cliente
-
-O sistema deve permitir acessar os dados de um cliente cadastrado por meio da opção de visualização disponível na listagem.
-
-### RF014 - Excluir cliente
-
-O sistema deve disponibilizar uma opção para exclusão de clientes cadastrados.
-
-### RF015 - Exibir indicadores de clientes
-
-O sistema deve apresentar indicadores relacionados aos clientes, incluindo quantidade de clientes cadastrados, clientes ativos, clientes sem matrícula e clientes ausentes.
----
 
 ## 5. Observações
 
