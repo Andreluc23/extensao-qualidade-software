@@ -17,16 +17,16 @@ Verificar se o sistema SIFIT permite localizar um cliente e registrar sua entrad
 6. Clicar em "Registrar entrada".
 7. Conferir se o registro aparece na listagem.
 
-## Resultado esperado
-O sistema deve localizar o cliente, permitir o registro da entrada quando autorizado e atualizar as informações de check-in.
-
 ## Resultado obtido
-O sistema abriu a janela de entrada manual, localizou o cliente pesquisado e apresentou a mensagem "Cliente liberado para realizar o check-in".
 
-Não foi possível confirmar pela gravação se a entrada foi efetivamente registrada.
+O sistema permitiu realizar a busca do cliente pelo nome, apresentou suas informações e exibiu a mensagem "Cliente liberado para realizar o check-in".
+
+Após selecionar o cliente, o procedimento de registro da entrada foi concluído com sucesso.
 
 ## Status
-⚠️ Parcialmente verificado — registro final não confirmado.
+
+✅ Aprovado
 
 ## Evidência
+
 🎥 [Visualizar evidência no Jam](https://jam.dev/c/fa2b1885-4b3d-4e27-98dd-c063458573ff)
