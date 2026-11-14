@@ -38,4 +38,4 @@ Bug reproduzido; pode gerar conflitos na geração automática de aulas (`CT030`
 
 ## Evidência
 
-https://sifit.centrion.com.br/dashboard
+
