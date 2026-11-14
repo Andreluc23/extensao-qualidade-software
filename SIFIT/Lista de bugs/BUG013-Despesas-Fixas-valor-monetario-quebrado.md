@@ -36,4 +36,4 @@ Necessário aplicar `white-space: nowrap;` na célula da coluna de valores.
 
 ## Evidência
 
-https://sifit.centrion.com.br/dashboard
+
