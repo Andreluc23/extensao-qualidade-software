@@ -37,4 +37,4 @@ Relacionado ao cenário de teste `CT007-Check-in-sem-cliente.md`. Necessário co
 
 ## Evidência
 
-
+https://jam.dev/c/5a05f61f-4988-454f-a054-34d74fdec8bd
