@@ -37,4 +37,4 @@ Necessário aplicar regras CSS adequadas de truncamento ou quebra de texto na co
 
 ## Evidência
 
-
+https://jam.dev/c/861c562c-b0fd-4a2e-8169-00acfeca7f5a
