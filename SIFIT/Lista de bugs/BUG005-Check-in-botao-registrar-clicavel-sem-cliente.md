@@ -37,4 +37,4 @@ Relacionado ao cenário de teste `CT007-Check-in-sem-cliente.md`. Necessário co
 
 ## Evidência
 
-https://sifit.centrion.com.br/dashboard
+
