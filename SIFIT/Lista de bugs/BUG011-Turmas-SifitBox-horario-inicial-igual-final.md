@@ -38,4 +38,4 @@ Bug reproduzido; pode gerar conflitos na geração automática de aulas (`CT030`
 
 ## Evidência
 
-
+https://jam.dev/c/da7ae74a-0ba4-42d8-96e8-956cfe9e1c4f
