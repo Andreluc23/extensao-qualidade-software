@@ -38,4 +38,4 @@ Bug reproduzido com sucesso; gera registros vazios que afetam outros módulos co
 
 ## Evidência
 
-
+https://jam.dev/c/fa207bc9-8219-4b18-b87b-e418430a6db8
