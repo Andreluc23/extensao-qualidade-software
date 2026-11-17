@@ -36,4 +36,4 @@ Valor padrão de campo `DATE` vazio do MySQL sendo renderizado diretamente sem t
 
 ## Evidência
 
-
+https://jam.dev/c/4e6a2210-af9a-442f-b527-617bf766726d
