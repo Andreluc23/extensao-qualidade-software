@@ -37,4 +37,4 @@ Falha no cálculo ou no mapeamento da propriedade de preço no componente de ran
 
 ## Evidência
 
-
+https://jam.dev/c/7ba2db5e-22c0-445b-bf26-509e6a0d9b0b
