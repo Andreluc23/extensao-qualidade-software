@@ -37,4 +37,4 @@ Impede a filtragem eficiente de despesas com ciclos customizados.
 
 ## Evidência
 
-
+https://jam.dev/c/132c8700-102b-43a0-82d9-1b59f6d3aa95
