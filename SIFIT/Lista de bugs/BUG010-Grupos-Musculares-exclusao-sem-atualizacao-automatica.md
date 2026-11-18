@@ -38,4 +38,4 @@ Bug reproduzido; indica ausência de re-renderização de estado após requisiç
 
 ## Evidência
 
-
+https://jam.dev/c/eb321c6a-42ba-41ba-9654-df5dc320ef0a
