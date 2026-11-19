@@ -1,0 +1,40 @@
+# CT096 - Consistência do ranking de planos
+
+## Objetivo
+Verificar se os valores de mensalidade apresentados no ranking "Planos com mais alunos" correspondem aos valores cadastrados na tabela de planos.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Planos.
+- Existência de planos com alunos vinculados e valores de mensalidade superiores a R$ 0,00.
+
+## Passos para execução
+1. Acessar o menu Comercial > Planos.
+2. Observar os planos e as mensalidades apresentados no ranking "Planos com mais alunos".
+3. Localizar os mesmos planos na tabela de planos.
+4. Comparar os valores apresentados nas duas seções.
+
+## Resultado esperado
+A mensalidade apresentada no ranking deve corresponder ao valor do respectivo plano na tabela.
+
+## Resultado obtido
+O ranking apresentou os planos "Plano Diário" (2 alunos), "Aba" (2 alunos) e "Plano Teste Keltton" (1 aluno), todos com mensalidade de R$ 0,00. O indicador Receita Estimada também apresentou R$ 0,00.
+
+Na tabela de planos, registrada em gravação realizada minutos antes, o "Plano Diário" (código 54) apresentava valor de R$ 20,00, e os planos identificados como "Aba" apresentavam valores entre R$ 3,00 e R$ 12,00.
+
+Os valores do ranking divergem dos valores cadastrados na tabela.
+
+## Status
+Reprovado.
+
+## Observação
+O ranking informa que é "calculado pelas matrículas carregadas". Não foi verificado se a mensalidade apresentada considera o valor registrado nas matrículas dos alunos.
+
+O valor do "Plano Teste Keltton" na tabela não ficou legível na gravação.
+
+## Bug relacionado
+BUG016 - Ranking apresenta mensalidade R$ 0,00, diferente dos valores da tabela.
+
+## Evidência
+- [Visualizar gravação do ranking no Jam](https://jam.dev/c/fa276fa9-f418-4165-a25c-fb6962fbf517)
+- [Visualizar gravação da tabela de planos no Jam](https://jam.dev/c/19b03c95-26d3-4da2-9f61-a0df7a3c49cf)
