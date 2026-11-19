@@ -1,0 +1,38 @@
+# CT115 - Execução de automação, em ambiente autorizado
+
+## Objetivo
+Verificar se o sistema SIFIT permite executar manualmente uma automação e se a execução gera resultados e atualiza os registros da Central de Automações.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Execução autorizada pelo responsável pelo ambiente.
+- Acesso ao menu Inteligência > Inteligência & Automação.
+
+## Passos para execução
+1. Acessar o menu Inteligência > Inteligência & Automação.
+2. Observar os indicadores da Central de Automações e a atividade recente.
+3. Ativar a automação selecionada.
+4. Clicar em "Executar agora".
+5. Observar a resposta do sistema.
+6. Restaurar o status original da automação.
+
+## Resultado esperado
+O sistema deve executar a automação, registrar a nova execução na atividade recente e atualizar a data da última execução e os resultados.
+
+## Resultado obtido
+Antes da execução, a Central apresentava 1 automação ativa, última execução na terça-feira às 00:55 e 4 relatórios enviados no mês. A automação "Aniversariantes" estava inativa e sem execuções.
+
+A automação "Aniversariantes" foi ativada e, ao clicar em "Executar agora", o sistema apresentou o aviso "Execução manual ainda não disponível para esta automação.". Nenhuma nova execução foi registrada na atividade recente.
+
+Após o teste, a automação "Aniversariantes" foi novamente desativada.
+
+## Status
+Inconclusivo — execução manual indisponível para a automação testada. A execução da automação "Risco de Evasão" não foi verificada.
+
+## Observação
+O botão "Executar agora" é apresentado habilitado, embora a execução manual não esteja disponível para a automação "Aniversariantes".
+
+Nenhuma mensagem foi enviada durante o teste. Execução autorizada por [informar responsável].
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/c7a479e7-3c15-4b48-9200-fa21c61bdd5b)
