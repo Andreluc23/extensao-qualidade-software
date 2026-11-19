@@ -1,0 +1,37 @@
+# CT094 - Cadastro válido de plano
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar um plano com dados válidos e apresentá-lo na listagem de planos.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Planos.
+
+## Passos para execução
+1. Acessar o menu Comercial > Planos.
+2. Clicar em "Novo Plano".
+3. Preencher Nome, Grupo, Status, Cobrança, Valor Mensal e Valor Matrícula.
+4. Preencher as informações de Equipe e Dependentes.
+5. Clicar em "Salvar Plano".
+6. Localizar o plano cadastrado na listagem.
+
+## Resultado esperado
+O sistema deve salvar o plano e apresentá-lo na listagem com os dados informados.
+
+## Resultado obtido
+O formulário foi preenchido com o Nome "Teste de QA", Grupo "Treino Livre", Status "Ativo", Cobrança "Mensalidade recorrente", Valor Mensal R$ 100,00, Valor Matrícula R$ 100,00, sem personal, Função dos Professores "Treinador da academia" e 0 dependentes.
+
+Após clicar em "Salvar Plano", o formulário foi fechado e o plano passou a ser exibido na listagem com o código 68, valor R$ 100,00, duração "Mensalidade" e status "Ativo".
+
+A tela apresentou 43 planos cadastrados.
+
+## Status
+Aprovado.
+
+## Observação
+Não foi exibida mensagem explícita de confirmação. A quantidade de planos antes do cadastro não foi registrada na gravação.
+
+O campo Parcelas não foi preenchido, e a opção "Salvar também na Pagar.me" não foi utilizada.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/19b03c95-26d3-4da2-9f61-a0df7a3c49cf)
