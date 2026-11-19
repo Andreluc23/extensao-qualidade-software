@@ -1,0 +1,35 @@
+# CT032 - Cadastro de cliente sem nome
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de um cliente quando o campo obrigatório Nome não é preenchido.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao módulo Clientes.
+
+## Passos para execução
+1. Acessar o menu Clientes.
+2. Clicar em "Novo Cliente".
+3. Deixar o campo Nome vazio.
+4. Preencher Status, Sexo e Data de Nascimento com dados válidos.
+5. Clicar em "Cadastrar Cliente".
+6. Observar a resposta do sistema.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Nome é obrigatório.
+
+## Resultado obtido
+Com o campo Nome vazio e os campos Status ("Ativo"), Sexo ("Masculino") e Data de Nascimento preenchidos, foi acionado o botão "Cadastrar Cliente".
+
+O sistema permaneceu na tela de cadastro, destacou o campo Nome e apresentou a mensagem "Preencha o nome da pessoa".
+
+No registro de rede da gravação não foi identificada requisição de salvamento do cadastro.
+
+## Status
+Aprovado.
+
+## Observação
+A listagem de clientes não foi exibida após a tentativa de cadastro.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/7f7dbd8f-12fd-48d6-a3fa-61a29068af81)
