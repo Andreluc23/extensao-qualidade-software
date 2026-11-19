@@ -1,0 +1,41 @@
+# BUG023 - Erro genérico ao salvar alteração de pontuação
+
+## Módulo
+
+Pontuação
+
+## Objetivo
+
+Documentar a falha ao salvar a alteração de uma pontuação existente, com apresentação de mensagem de erro genérica.
+
+## Pré-condições
+
+- Usuário autenticado no sistema SIFIT.
+- Existência de pontuação do tipo Mensal com período exibido como `0000-00-00`.
+
+## Passos para reprodução
+
+1. Navegar até o menu **Pontuação**.
+2. Abrir a pontuação de código 6 pelo ícone de visualização.
+3. Informar uma **Data Inicial** e uma **Data Final** válidas.
+4. Clicar em **Salvar**.
+
+## Resultado esperado
+
+O sistema deve salvar a alteração ou, caso exista alguma regra impeditiva, informar claramente o motivo.
+
+## Resultado obtido
+
+O sistema apresenta a mensagem **"Erro ao salvar pontuação"**, sem indicar a causa, e a alteração não é registrada.
+
+## Status
+
+⚠️ A confirmar
+
+## Observação
+
+Necessário verificar se o erro decorre de regra de negócio não informada ao usuário, como a obrigatoriedade de produto de resgate, ou de falha no processamento da alteração.
+
+## Evidência
+
+https://jam.dev/c/b12e6e07-3430-4cc5-80db-a3f136d827c1
