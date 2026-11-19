@@ -1,0 +1,38 @@
+# CT091 - Cadastro de lead
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar um novo lead no módulo de Prospecção e apresentá-lo na listagem.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Prospecção.
+
+## Passos para execução
+1. Acessar o menu Comercial > Prospecção.
+2. Clicar em "Adicionar Lead".
+3. Preencher o campo Nome.
+4. Manter o Estágio do Lead como "Novo Contato".
+5. Clicar em "Salvar Lead".
+6. Verificar a listagem e os indicadores da tela.
+
+## Resultado esperado
+O sistema deve salvar o lead, apresentá-lo na listagem com o estágio informado e atualizar os indicadores de prospecção.
+
+## Resultado obtido
+Com o Nome "Roberto Tigas" preenchido e o Estágio "Novo Contato" selecionado, foi acionado o botão "Salvar Lead".
+
+O formulário foi fechado e o lead passou a ser exibido na listagem com o código 3, estágio "Novo Contato" e data de criação 19/11/2026.
+
+Os indicadores passaram a apresentar 3 leads e 2 novos contatos. Em gravação realizada minutos antes, a mesma tela apresentava 2 leads e 1 novo contato.
+
+## Status
+Aprovado.
+
+## Observação
+Somente o campo Nome foi preenchido. Os campos E-mail, Telefone e Observação foram mantidos vazios, e o sistema permitiu o cadastro.
+
+Não foi exibida mensagem explícita de confirmação.
+
+## Evidência
+- [Visualizar gravação no Jam](https://jam.dev/c/9583a4d6-fc75-4613-84cd-f633ba1ebd98)
+- [Estado anterior dos indicadores](https://jam.dev/c/b8904b7e-72c0-4708-8c0d-10fa3bc09cbb)
