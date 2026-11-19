@@ -1,0 +1,41 @@
+# BUG026 - Indicador "Alunos em risco identificados" permanece zerado
+
+## Módulo
+
+Inteligência / Resultados IA
+
+## Objetivo
+
+Documentar a inconsistência entre o indicador de alunos em risco e os resultados de risco de evasão apresentados na mesma tela.
+
+## Pré-condições
+
+- Usuário autenticado no sistema SIFIT.
+- Automação **Risco de Evasão** executada com alunos identificados.
+
+## Passos para reprodução
+
+1. Navegar até o menu **Inteligência > Resultados IA**.
+2. Selecionar o período **Últimos 30 dias**.
+3. Observar o indicador **Alunos em risco identificados**.
+4. Comparar com os registros da seção **O que o Sifit identificou** e com o alerta da seção **Inteligência Sifit**.
+
+## Resultado esperado
+
+O indicador deve apresentar a quantidade de alunos em risco identificados no período, de forma coerente com os registros e alertas da tela.
+
+## Resultado obtido
+
+O indicador permanece em **0** em todos os períodos, enquanto a tela apresenta execuções com 1 e 2 alunos em alto risco, 23 alunos em médio risco e o alerta "Sua academia possui 23 aluno(s) com risco de evasão".
+
+## Status
+
+🔍 Identificado
+
+## Observação
+
+O indicador permanece zerado mesmo considerando somente os alunos classificados em alto risco.
+
+## Evidência
+
+https://jam.dev/c/79b9de99-6552-46f0-97d2-e62784fd790b
