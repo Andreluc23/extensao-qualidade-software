@@ -1,0 +1,35 @@
+# CT099 - Cadastro de bandeira
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar uma bandeira de cartão e apresentá-la na listagem.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Bandeiras.
+
+## Passos para execução
+1. Acessar o menu Comercial > Bandeiras.
+2. Clicar em "Nova Bandeira".
+3. Preencher Nome, Taxa Adicional e Taxa Débito.
+4. Clicar em "Salvar".
+5. Verificar a listagem de bandeiras.
+6. Acionar a pesquisa sem filtros.
+
+## Resultado esperado
+O sistema deve salvar a bandeira e apresentá-la na listagem com os dados informados.
+
+## Resultado obtido
+O formulário foi preenchido com o Nome "Bandeira Teste QA", Taxa Adicional 10,00 e Taxa Débito 5,00, sem parcelas adicionadas.
+
+Após clicar em "Salvar", o formulário foi fechado e a tela apresentou a mensagem "Nenhuma bandeira encontrada." com "0 registro(s)".
+
+A pesquisa sem filtros também não apresentou registros. Não foi exibida mensagem de confirmação ou de erro.
+
+## Status
+Reprovado provisoriamente — bandeira não apresentada na listagem após o salvamento. Não foi possível confirmar se o registro foi gravado ou se a listagem não carrega os dados.
+
+## Observação
+Comportamento semelhante foi observado no CT097 (Cadastro de modelo de contrato).
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/a1c83f31-77d2-4f0e-a7aa-7da48689a12c)
