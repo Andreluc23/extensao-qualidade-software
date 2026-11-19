@@ -1,0 +1,32 @@
+# CT097 - Cadastro de modelo de contrato
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar um modelo de contrato e apresentá-lo na listagem de modelos.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Modelos Contrato.
+
+## Passos para execução
+1. Acessar o menu Comercial > Modelos Contrato.
+2. Clicar em "Adicionar Modelo Contrato".
+3. Preencher o Título do modelo e o Status.
+4. Informar o texto do contrato.
+5. Clicar em "Salvar modelo".
+6. Verificar a listagem de modelos de contrato.
+
+## Resultado esperado
+O sistema deve salvar o modelo e apresentá-lo na listagem com o título e o status informados.
+
+## Resultado obtido
+O formulário foi preenchido com o Título "Modelo Teste QA", Status "Ativo" e o texto "Modelo de teste".
+
+Após clicar em "Salvar modelo", o botão apresentou o estado "Salvando..." e a tela foi redirecionada para a listagem de modelos de contrato.
+
+A listagem foi exibida sem nenhum registro e sem mensagem informativa. O modelo cadastrado não foi apresentado, e nenhuma mensagem de confirmação ou erro foi exibida.
+
+## Status
+Reprovado provisoriamente — modelo não apresentado na listagem após o salvamento. Não foi possível confirmar se o registro foi gravado ou se a listagem não carrega os dados.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/5e70c288-2a5d-4d04-8f40-6f8a8cd0b5e7)
