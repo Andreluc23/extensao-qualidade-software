@@ -1,0 +1,38 @@
+# CT104 - Cadastro de atividade sem nome
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de uma atividade quando o campo Nome não é preenchido.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Atividades.
+
+## Passos para execução
+1. Acessar o menu Gestão > Atividades.
+2. Observar os indicadores e a listagem.
+3. Clicar em "Nova Atividade".
+4. Manter o campo Nome vazio.
+5. Preencher Pontuação e Descrição.
+6. Clicar em "Salvar".
+7. Verificar os indicadores e a listagem.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Nome é obrigatório.
+
+## Resultado obtido
+Antes do cadastro, a tela apresentava 13 atividades, sendo 7 com pontuação, 6 sem pontuação e 6 com descrição. A listagem já continha atividades sem nome (códigos 9 e 16).
+
+Com o campo Nome vazio, Pontuação 90 e Descrição "90", foi acionado o botão "Salvar". O sistema não apresentou mensagem de validação e fechou o formulário.
+
+A atividade foi registrada com o código 18, sem nome e com pontuação 90.
+
+Durante a execução, outro registro (código 17) foi criado por teste paralelo, e o total de atividades passou para 15.
+
+## Status
+Reprovado.
+
+## Bug relacionado
+BUG017 - Registros ativos aparecem sem nome, indicando possível ausência de validação.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/85c93d81-675b-4546-bde8-7c439b748cb1)
