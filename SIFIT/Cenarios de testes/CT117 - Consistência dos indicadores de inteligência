@@ -1,0 +1,39 @@
+# CT117 - Consistência dos indicadores de inteligência
+
+## Objetivo
+Verificar se os indicadores da tela Resultados da Inteligência variam conforme o período selecionado e se são coerentes com os registros e alertas apresentados.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Inteligência > Resultados IA.
+- Existência de automações executadas.
+
+## Passos para execução
+1. Acessar o menu Inteligência > Resultados IA.
+2. Observar os indicadores no período "Últimos 7 dias".
+3. Selecionar os períodos "Hoje", "Últimos 30 dias" e "Últimos 90 dias".
+4. Comparar os indicadores com os registros da seção "O que o Sifit identificou" e com os alertas da seção "Inteligência Sifit".
+
+## Resultado esperado
+Os indicadores devem variar conforme o período selecionado e apresentar valores coerentes com os registros e alertas exibidos na mesma tela.
+
+## Resultado obtido
+Os indicadores de automações executadas e relatórios enviados variaram conforme o período: 0 em "Hoje", 4 em "Últimos 7 dias", 13 em "Últimos 30 dias" e 21 em "Últimos 90 dias". No período "Hoje", a tela informou que não havia registros nem automações executadas.
+
+O indicador "Alunos em risco identificados" permaneceu em 0 em todos os períodos. Entretanto, no período "Últimos 30 dias", a seção "O que o Sifit identificou" apresentou execuções com 1 e 2 alunos em alto risco e outras com 23 alunos em médio risco, e a seção "Inteligência Sifit" informou, em todos os períodos, que a academia possui 23 alunos com risco de evasão.
+
+O indicador "Alunos em risco identificados" não é coerente com os registros e alertas apresentados na mesma tela.
+
+## Status
+Reprovado.
+
+## Observação
+O indicador "Aniversariantes encontrados" apresentou 5 alunos em "Últimos 30 dias" e 31 em "Últimos 90 dias", enquanto a automação "Aniversariantes" constava como "Nunca executou" na Central de Automações (CT114). A origem desses valores necessita de confirmação.
+
+O indicador de alunos inadimplentes monitorados não foi comparado com outras telas do sistema.
+
+## Bug relacionado
+BUG026 - Indicador "Alunos em risco identificados" permanece zerado.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/79b9de99-6552-46f0-97d2-e62784fd790b)
