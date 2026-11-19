@@ -1,0 +1,36 @@
+# CT113 - Pergunta de anamnese sem nome
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de uma pergunta de anamnese quando o campo Nome não é preenchido.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso à tela Perguntas Anamnese.
+
+## Passos para execução
+1. Acessar a tela Perguntas Anamnese.
+2. Observar os indicadores e a listagem.
+3. Clicar em "Nova Pergunta".
+4. Manter o campo Nome vazio.
+5. Preencher Pergunta e Tipo Resposta.
+6. Clicar em "Salvar".
+7. Verificar os indicadores e a listagem.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Nome é obrigatório.
+
+## Resultado obtido
+Antes do cadastro, a tela apresentava 18 perguntas ativas. A listagem já continha perguntas sem nome (códigos 7, 8, 9, 15 e 17).
+
+Com o campo Nome vazio, Pergunta "Qa" e Tipo Resposta "Sim e Não", foi acionado o botão "Salvar". O sistema não apresentou mensagem de validação e fechou o formulário.
+
+A pergunta foi registrada com o código 24, sem nome, tipo de resposta "Sim / Não" e status "Ativo". Os indicadores passaram a apresentar 19 perguntas ativas.
+
+## Status
+Reprovado.
+
+## Bug relacionado
+BUG017 - Registros ativos aparecem sem nome, indicando possível ausência de validação.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/d316f0a3-b025-4ef3-bfad-856c232136e6)
