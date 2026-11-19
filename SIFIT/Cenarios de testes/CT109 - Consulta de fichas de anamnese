@@ -1,0 +1,35 @@
+# CT109 - Consulta de fichas de anamnese
+
+## Objetivo
+Verificar se a tela de Fichas de Anamnese apresenta as fichas aplicadas aos alunos e se a pesquisa e os filtros retornam os registros correspondentes.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu de Fichas de Anamnese.
+- Existência de fichas de anamnese aplicadas.
+
+## Passos para execução
+1. Acessar a tela de Fichas de Anamnese.
+2. Observar os indicadores e a listagem.
+3. Pesquisar uma ficha pelo nome do cliente.
+4. Aplicar o filtro de status.
+5. Abrir uma ficha para visualização.
+
+## Resultado esperado
+O sistema deve apresentar as fichas de anamnese aplicadas, retornar somente os registros correspondentes à pesquisa e aos filtros e permitir a visualização dos dados.
+
+## Resultado obtido
+A tela de Fichas de Anamnese foi carregada com os indicadores Total de fichas, Concluídas, Pendentes e Clientes avaliados zerados.
+
+A listagem apresentou a mensagem "Nenhuma ficha encontrada", informando que as anamneses aplicadas aos alunos são exibidas nessa área.
+
+Como não havia fichas cadastradas, não foi possível verificar a pesquisa, o filtro de status e a visualização de registros.
+
+## Status
+Inconclusivo — ausência de fichas cadastradas para verificação da consulta.
+
+## Observação
+A tela apresentou corretamente o estado vazio, com indicadores coerentes com a listagem. Não foi possível confirmar se a ausência de registros corresponde aos dados reais do sistema.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/05ba12cd-1427-4d20-8a1f-d2803c5391a4)
