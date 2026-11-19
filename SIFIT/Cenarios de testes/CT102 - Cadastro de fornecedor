@@ -1,0 +1,35 @@
+# CT102 - Cadastro de fornecedor
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar um fornecedor com dados válidos e apresentá-lo na listagem.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Fornecedores.
+
+## Passos para execução
+1. Acessar o menu Gestão > Fornecedores.
+2. Observar os indicadores da tela.
+3. Clicar em "Novo Fornecedor".
+4. Preencher Nome, CNPJ, Telefone Principal e os dados de endereço.
+5. Clicar em "Salvar".
+6. Verificar os indicadores e a listagem.
+
+## Resultado esperado
+O sistema deve salvar o fornecedor, apresentá-lo na listagem e atualizar a quantidade de fornecedores cadastrados.
+
+## Resultado obtido
+Antes do cadastro, a tela apresentava 12 fornecedores cadastrados e 11 ativos.
+
+O formulário foi preenchido com o Nome "Teste de QA", CNPJ fictício, Telefone Principal, Estado "Paraná", Cidade "Abatiá", CEP, endereço, número e bairro.
+
+Após clicar em "Salvar", o formulário foi fechado e o indicador passou a apresentar 13 fornecedores cadastrados. O fornecedor foi exibido na listagem com o código 445 e status "Ativo".
+
+## Status
+Aprovado.
+
+## Observação
+Não foi exibida mensagem explícita de confirmação. O indicador de fornecedores ativos ficou encoberto por um aviso do navegador após o salvamento.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/c80f2388-6cc7-4846-be14-5639cbf6bf89)
