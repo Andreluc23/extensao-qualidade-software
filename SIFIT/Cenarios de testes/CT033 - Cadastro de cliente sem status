@@ -1,0 +1,35 @@
+# CT033 - Cadastro de cliente sem status
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de um cliente quando o campo obrigatório Status não é selecionado.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao módulo Clientes.
+
+## Passos para execução
+1. Acessar o menu Clientes.
+2. Clicar em "Novo Cliente".
+3. Preencher Nome, Sexo e Data de Nascimento com dados válidos.
+4. Manter o campo Status sem seleção.
+5. Clicar em "Cadastrar Cliente".
+6. Observar a resposta do sistema.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Status é obrigatório.
+
+## Resultado obtido
+Com os campos Nome ("Cliente teste"), Sexo ("Masculino") e Data de Nascimento preenchidos e o campo Status sem seleção, foi acionado o botão "Cadastrar Cliente".
+
+O sistema permaneceu na tela de cadastro, destacou o campo Status e apresentou a mensagem "Preencha o Status".
+
+Entretanto, a mensagem "Preencha o nome da pessoa", proveniente de uma tentativa anterior, continuou sendo exibida abaixo do campo Nome, mesmo com o campo preenchido e após nova tentativa de cadastro.
+
+## Status
+Aprovado com ressalva — cadastro bloqueado pela ausência do Status, mas mensagem de validação do Nome permaneceu indevidamente na tela.
+
+## Bug relacionado
+BUG002 - Mensagem de validação do Nome permanece após o preenchimento do campo.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/dabf9a08-ed59-4b7a-b6be-b711f690ed32)
