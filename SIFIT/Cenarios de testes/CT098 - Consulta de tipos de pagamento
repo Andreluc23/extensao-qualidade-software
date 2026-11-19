@@ -1,0 +1,42 @@
+# CT098 - Consulta de tipos de pagamento
+
+## Objetivo
+Verificar se a tela de Tipos de Pagamento apresenta os registros cadastrados com o status correto.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Tipos de Pagamento.
+- Existência de tipos de pagamento cadastrados.
+
+## Passos para execução
+1. Acessar o menu Comercial > Tipos de Pagamento.
+2. Observar os indicadores da tela.
+3. Percorrer a listagem e verificar o status de cada registro.
+4. Abrir um tipo de pagamento pelo ícone de visualização.
+5. Comparar o status apresentado no formulário com o status da listagem.
+
+## Resultado esperado
+O status de cada tipo de pagamento deve ser apresentado de forma consistente na listagem, nos indicadores e no formulário do registro.
+
+## Resultado obtido
+Os indicadores apresentaram 12 tipos de pagamento, sendo 0 ativos e 12 inativos. Todos os registros da listagem, incluindo Dinheiro, Pix e Cartão de Crédito, foram exibidos com status "INATIVO".
+
+Ao abrir o tipo de pagamento de código 13 ("Cartao Teste Keltton"), o formulário apresentou o Status "Ativo".
+
+Após clicar em "Salvar" sem alterar os dados, os indicadores permaneceram com 0 ativos e 12 inativos.
+
+O status apresentado na listagem e nos indicadores diverge do status registrado no formulário.
+
+## Status
+Reprovado.
+
+## Observação
+O filtro por Status não foi testado.
+
+O BUG022 registrava 15 tipos de pagamento. Na execução deste teste, a listagem apresentou 12 registros.
+
+## Bug relacionado
+BUG022 - Todos os 15 tipos de pagamento estão inativos.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/d4b3403d-da41-412e-853e-d9c362b8f165)
