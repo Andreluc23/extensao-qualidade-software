@@ -1,0 +1,35 @@
+# CT036 - Cadastro de cliente com data de nascimento inválida
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de um cliente quando a Data de Nascimento informada é inválida.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao módulo Clientes.
+
+## Passos para execução
+1. Acessar o menu Clientes.
+2. Clicar em "Novo Cliente".
+3. Preencher Nome, Status e Sexo com dados válidos.
+4. Informar uma data de nascimento futura no campo Data de Nascimento.
+5. Clicar em "Cadastrar Cliente".
+6. Observar a resposta do sistema.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que a Data de Nascimento informada é inválida.
+
+## Resultado obtido
+Com os campos Nome ("Cliente teste"), Status ("Inativo") e Sexo ("Masculino") preenchidos e a Data de Nascimento "09/09/2999", foi acionado o botão "Cadastrar Cliente".
+
+O sistema não apresentou mensagem de erro. O botão exibiu o estado "Salvando..." e a tela foi redirecionada para a listagem de clientes, comportamento semelhante ao de um cadastro concluído.
+
+Não foi possível confirmar na gravação se o cliente foi registrado com a data informada, pois o novo registro não foi exibido na listagem.
+
+## Status
+Reprovado provisoriamente — o sistema aceitou a data futura sem apresentar validação. Persistência do registro não confirmada.
+
+## Observação
+Não foi testada uma data inexistente, como 31/02/2000.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/a9fa5701-56a6-46ad-9c59-7535f6be5a8f)
