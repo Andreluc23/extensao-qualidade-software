@@ -1,0 +1,39 @@
+# CT114 - Consulta de automações
+
+## Objetivo
+Verificar se a tela de Inteligência & Automação apresenta as automações cadastradas, seus status e os resultados das últimas execuções.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Inteligência > Inteligência & Automação.
+
+## Passos para execução
+1. Acessar o menu Inteligência > Inteligência & Automação.
+2. Observar os indicadores da Central de Automações.
+3. Verificar as automações ativas e disponíveis.
+4. Abrir os resultados de uma automação pelo botão "Ver resultados".
+5. Comparar os resultados apresentados com as informações da automação.
+
+## Resultado esperado
+O sistema deve apresentar as automações com seus status e informações de execução, e os resultados devem ser exibidos de forma legível e coerente com os indicadores.
+
+## Resultado obtido
+A Central de Automações apresentou 1 automação ativa, última execução na terça-feira às 00:55, canal principal WhatsApp e 4 relatórios enviados no mês.
+
+A automação "Risco de Evasão" foi exibida como ativa, com frequência diária e último resultado de 0 alunos em alto risco, 23 em médio risco e 0 em baixo risco. A automação "Aniversariantes" foi exibida como inativa e sem execuções. As demais automações foram apresentadas como "Em desenvolvimento".
+
+Ao clicar em "Ver resultados", o sistema apresentou o Relatório de Risco de Evasão com 23 alunos analisados em 17/11/2026, com a mesma distribuição de riscos exibida na automação.
+
+No tema Escuro, o relatório foi apresentado com fundo claro, e o título e os nomes dos alunos foram exibidos com contraste insuficiente, dificultando a leitura.
+
+## Status
+Aprovado com ressalva — consulta funcionando e resultados coerentes, mas o relatório apresenta contraste insuficiente no tema Escuro.
+
+## Observação
+Nenhuma automação foi executada durante o teste.
+
+## Bug relacionado
+BUG025 - Relatório de Risco de Evasão com contraste insuficiente no tema Escuro.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/49316379-340a-44bf-afc7-b94164c68bd4)
