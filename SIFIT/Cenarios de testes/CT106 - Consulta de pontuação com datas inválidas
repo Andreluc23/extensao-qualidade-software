@@ -1,0 +1,40 @@
+# CT106 - Consulta de pontuação com datas inválidas
+
+## Objetivo
+Verificar se a tela de Pontuação apresenta os períodos dos registros com datas válidas e em formato adequado.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Pontuação.
+- Existência de pontuações cadastradas.
+
+## Passos para execução
+1. Acessar o menu Gestão > Pontuação.
+2. Observar os indicadores e a coluna Período da listagem.
+3. Abrir uma pontuação pelo ícone de visualização.
+4. Comparar as datas do formulário com as datas da listagem.
+
+## Resultado esperado
+As datas devem ser apresentadas no formato DD/MM/AAAA ou, quando inexistentes, com um indicador vazio, sem valores como "0000-00-00".
+
+## Resultado obtido
+A tela apresentou 3 pontuações ativas, sendo 1 por período e 2 mensais.
+
+As pontuações de códigos 6 ("sdffasfd") e 7 ("Desafio de Novembro"), do tipo Mensal, foram exibidas com o período "0000-00-00 — 0000-00-00". A pontuação de código 5, do tipo Período, foi exibida com as datas no formato AAAA-MM-DD ("2026-10-17 — 2026-10-31").
+
+Ao abrir a pontuação de código 6, os campos Data Inicial e Data Final foram apresentados vazios no formulário.
+
+Ao informar datas válidas e clicar em "Salvar", o sistema apresentou a mensagem "Erro ao salvar pontuação", sem indicar o motivo. A edição foi cancelada e a listagem permaneceu inalterada.
+
+## Status
+Reprovado.
+
+## Observação
+O formato das datas na listagem (AAAA-MM-DD) difere do padrão DD/MM/AAAA utilizado em outras telas do sistema.
+
+## Bug relacionado
+- BUG019 - Registros ativos apresentam datas inválidas 0000-00-00.
+- BUG023 - Erro genérico ao salvar alteração de pontuação.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/b12e6e07-3430-4cc5-80db-a3f136d827c1)
