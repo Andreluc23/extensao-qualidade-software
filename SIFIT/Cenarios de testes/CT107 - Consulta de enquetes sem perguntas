@@ -1,0 +1,39 @@
+# CT107 - Consulta de enquetes sem perguntas
+
+## Objetivo
+Verificar se as enquetes ativas possuem perguntas cadastradas e se a listagem apresenta essa informação corretamente.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Enquetes.
+- Existência de enquetes cadastradas.
+
+## Passos para execução
+1. Acessar o menu Gestão > Enquetes.
+2. Observar os indicadores e a coluna Pergunta da listagem.
+3. Abrir uma enquete ativa pelo ícone de visualização.
+4. Comparar a pergunta apresentada no formulário com a informação da listagem.
+
+## Resultado esperado
+Toda enquete ativa deve possuir ao menos uma pergunta cadastrada, e a listagem deve apresentar essa informação de forma consistente com o cadastro.
+
+## Resultado obtido
+A tela apresentou 47 enquetes, sendo 44 ativas e 3 inativas, e o indicador de respostas apresentou 0.
+
+Todas as enquetes exibidas na listagem apresentaram a informação "Sem pergunta cadastrada", inclusive as enquetes com status "Ativo".
+
+Ao abrir a enquete de código 24 ("Horário para treinar"), com status "Ativo", o formulário apresentou a pergunta "Qual o melhor horário para treinar?", sem opções de resposta cadastradas.
+
+A listagem informa que a enquete não possui pergunta, embora o formulário apresente uma pergunta cadastrada.
+
+## Status
+Reprovado.
+
+## Observação
+Somente uma enquete foi aberta. Não foi verificado se as demais enquetes ativas possuem perguntas cadastradas.
+
+## Bug relacionado
+BUG020 - Enquetes ativas aparecem sem perguntas cadastradas.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/3724eefc-704c-423a-ba75-8f5aa68762cb)
