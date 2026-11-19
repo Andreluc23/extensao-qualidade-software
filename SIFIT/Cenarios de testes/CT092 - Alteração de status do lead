@@ -1,0 +1,36 @@
+# CT092 - Alteração de status do lead
+
+## Objetivo
+Verificar se o sistema SIFIT permite alterar o estágio de um lead cadastrado e se a listagem e os indicadores de prospecção são atualizados.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Prospecção.
+- Lead cadastrado com estágio "Novo Contato".
+
+## Passos para execução
+1. Acessar o menu Comercial > Prospecção.
+2. Limpar os filtros da listagem.
+3. Localizar o lead e clicar no ícone de visualização.
+4. Alterar o campo Estágio do Lead.
+5. Clicar em "Salvar Lead".
+6. Verificar o estágio na listagem e os indicadores da tela.
+
+## Resultado esperado
+O sistema deve salvar o novo estágio do lead, apresentá-lo na listagem e atualizar os indicadores de prospecção.
+
+## Resultado obtido
+Antes da alteração, o lead de código 3 ("Roberto Ti") era exibido com o estágio "Novo Contato", e os indicadores apresentavam 3 leads, 2 novos contatos e 1 interessado.
+
+Na tela "Visualizar Lead", o estágio foi alterado para "Interessado" e o cadastro foi salvo.
+
+Após a operação, o lead passou a ser exibido com o estágio "Interessado", e os indicadores foram atualizados para 3 leads, 1 novo contato e 2 interessados.
+
+## Status
+Aprovado.
+
+## Observação
+A tela utilizada para edição é identificada como "Visualizar Lead", embora permita alterar os dados do registro.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/2d6aaee7-190a-45ab-b38a-83fbd5618013)
