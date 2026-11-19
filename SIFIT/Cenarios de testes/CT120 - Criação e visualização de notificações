@@ -1,0 +1,30 @@
+# CT120 - Criação e visualização de notificações
+
+## Objetivo
+Verificar se o sistema SIFIT permite criar notificações e apresentá-las ao usuário no painel de notificações.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao painel de notificações.
+
+## Passos para execução
+1. Clicar no ícone de notificações no topo da tela.
+2. Observar as notificações apresentadas nas abas "Tudo" e "Não lidas".
+3. Criar uma nova notificação.
+4. Verificar se a notificação é apresentada no painel.
+
+## Resultado esperado
+O sistema deve permitir a criação da notificação e apresentá-la no painel, com atualização da quantidade de notificações não lidas.
+
+## Resultado obtido
+Ao clicar no ícone de notificações, o sistema apresentou o painel "Notificações" com as abas "Tudo" e "Não lidas" e a opção "Marcar como lidas".
+
+Nas duas abas, o painel apresentou a mensagem "Nada pendente por aqui. Você está em dia.".
+
+A criação de uma notificação não foi realizada, e não foi possível verificar a apresentação de novas notificações nem o funcionamento da opção "Marcar como lidas".
+
+## Status
+Inconclusivo — painel de notificações exibido corretamente sem registros, mas a criação de notificações não foi verificada.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/0d1e8f07-d627-4012-91cb-eaf56855efc0)
