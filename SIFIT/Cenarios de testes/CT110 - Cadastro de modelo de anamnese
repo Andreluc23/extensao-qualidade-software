@@ -1,0 +1,39 @@
+# CT110 - Cadastro de modelo de anamnese
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar um modelo de anamnese e apresentá-lo na listagem de modelos.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso à tela Modelos de Anamnese.
+
+## Passos para execução
+1. Acessar a tela Modelos de Anamnese.
+2. Observar os indicadores e os modelos cadastrados.
+3. Clicar em "Novo Modelo".
+4. Preencher Nome e Descrição.
+5. Clicar em "Salvar Modelo".
+6. Verificar a listagem e os indicadores.
+
+## Resultado esperado
+O sistema deve salvar o modelo, apresentá-lo na listagem e atualizar os indicadores de forma coerente.
+
+## Resultado obtido
+Antes do cadastro, a tela apresentava 1 modelo ativo, com média de 1 pergunta e 3 aplicações.
+
+O modelo foi preenchido com o Nome "Teste de QA" e a Descrição "Testar QA", sem perguntas selecionadas no Montador Visual. Após clicar em "Salvar Modelo", o sistema retornou à listagem e apresentou o modelo com status "Ativo", 0 perguntas e 0 aplicações.
+
+Os indicadores passaram a apresentar 2 modelos e 2 ativos. O indicador "Média de perguntas" permaneceu em 1.
+
+## Status
+Aprovado com ressalva — modelo cadastrado corretamente, mas o sistema permitiu salvar um modelo ativo sem perguntas.
+
+## Observação
+Não foi confirmado se a regra de negócio permite modelos ativos sem perguntas.
+
+O modelo existente apresentava 3 aplicações, enquanto a tela de Fichas de Anamnese não apresentava fichas cadastradas (CT109). A divergência necessita de confirmação.
+
+A lista de perguntas disponíveis do Montador Visual apresentou perguntas sem título.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/6b37f132-8e76-42dc-9e4e-002ebc63c171)
