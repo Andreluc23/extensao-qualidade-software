@@ -1,0 +1,41 @@
+# BUG024 - Aplicação de anamnese retorna erro interno do servidor
+
+## Módulo
+
+Anamnese
+
+## Objetivo
+
+Documentar a falha ao finalizar a aplicação de uma anamnese, com retorno de erro interno do servidor.
+
+## Pré-condições
+
+- Usuário autenticado no sistema SIFIT.
+- Existência de modelo de anamnese cadastrado.
+
+## Passos para reprodução
+
+1. Navegar até **Fichas de Anamnese** e clicar em **Nova Anamnese**.
+2. Na etapa **Selecionar Aluno**, digitar um nome no campo de busca e clicar em **Próxima**.
+3. Selecionar um modelo de anamnese e avançar.
+4. Na etapa **Revisar e Finalizar**, clicar em **Finalizar Anamnese**.
+
+## Resultado esperado
+
+O sistema deve registrar a anamnese ou impedir o avanço quando não houver aluno selecionado ou respostas preenchidas, informando o motivo ao usuário.
+
+## Resultado obtido
+
+O assistente permitiu avançar sem aluno identificado ("aplicar para .") e sem respostas. Ao finalizar, o sistema apresentou "Erro no servidor – Erro interno inesperado." e a requisição de aplicação retornou HTTP 500.
+
+## Status
+
+🔍 Identificado
+
+## Observação
+
+Necessário verificar se o erro também ocorre com aluno selecionado e respostas preenchidas.
+
+## Evidência
+
+https://jam.dev/c/8e20ee28-013f-4709-aea0-d8e5e08c1249
