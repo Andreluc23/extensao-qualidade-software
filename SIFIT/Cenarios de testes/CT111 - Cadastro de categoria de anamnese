@@ -1,0 +1,35 @@
+# CT111 - Cadastro de categoria de anamnese
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar uma categoria de anamnese e apresentá-la na listagem.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso à tela Categorias de Anamnese.
+
+## Passos para execução
+1. Acessar a tela Categorias de Anamnese.
+2. Observar os indicadores e as categorias cadastradas.
+3. Clicar em "Nova Categoria".
+4. Preencher o Nome da Categoria e o Status.
+5. Clicar em "Criar Categoria".
+6. Verificar a listagem e os indicadores.
+
+## Resultado esperado
+O sistema deve salvar a categoria, apresentá-la na listagem e atualizar os indicadores de forma coerente.
+
+## Resultado obtido
+Antes do cadastro, a tela apresentava 6 categorias, todas ativas, e o indicador "Com perguntas" apresentava 6.
+
+A categoria foi preenchida com o Nome "Saude QA", Status "Ativo", ícone e cor padrão. Após clicar em "Criar Categoria", o formulário foi fechado e a categoria passou a ser exibida na listagem com status "Ativo".
+
+Os indicadores passaram a apresentar 7 categorias e 7 ativas. O indicador "Com perguntas" também passou para 7, embora a categoria recém-cadastrada não possua perguntas vinculadas.
+
+## Status
+Aprovado com ressalva — categoria cadastrada corretamente, mas o indicador "Com perguntas" contabilizou uma categoria sem perguntas.
+
+## Observação
+Não foi verificado se as demais categorias possuem perguntas vinculadas.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/78757beb-3b3d-40e9-89f8-432063099933)
