@@ -1,0 +1,42 @@
+# BUG025 - Relatório de Risco de Evasão com contraste insuficiente no tema Escuro
+
+## Módulo
+
+Inteligência & Automação
+
+## Objetivo
+
+Documentar problema de legibilidade no Relatório de Risco de Evasão quando o sistema está configurado no tema Escuro.
+
+## Pré-condições
+
+- Usuário autenticado no sistema SIFIT.
+- Tema **Escuro** selecionado.
+- Automação **Risco de Evasão** com resultados gerados.
+
+## Passos para reprodução
+
+1. Selecionar o tema **Escuro**.
+2. Navegar até o menu **Inteligência & Automação**.
+3. Na automação **Risco de Evasão**, clicar em **Ver resultados**.
+4. Observar o título do relatório e a lista de alunos.
+
+## Resultado esperado
+
+O relatório deve apresentar contraste adequado entre o texto e o fundo, garantindo a leitura das informações.
+
+## Resultado obtido
+
+O relatório é exibido com fundo claro, enquanto o título e os nomes dos alunos aparecem em cinza muito claro, ficando praticamente ilegíveis.
+
+## Status
+
+🔍 Identificado
+
+## Observação
+
+Comportamento semelhante ao registrado no BUG018, porém em outra tela do sistema. Não foi verificado o comportamento no tema Claro.
+
+## Evidência
+
+https://jam.dev/c/49316379-340a-44bf-afc7-b94164c68bd4
