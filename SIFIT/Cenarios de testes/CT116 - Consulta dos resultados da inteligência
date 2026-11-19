@@ -1,0 +1,39 @@
+# CT116 - Consulta dos resultados da inteligência
+
+## Objetivo
+Verificar se a tela Resultados da Inteligência apresenta os indicadores, os registros identificados e as informações das automações executadas.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Inteligência > Resultados IA.
+- Existência de automações executadas.
+
+## Passos para execução
+1. Acessar o menu Inteligência > Resultados IA.
+2. Observar o período selecionado e os indicadores apresentados.
+3. Verificar a seção "O que o Sifit identificou".
+4. Verificar os alertas da seção "Inteligência Sifit".
+5. Verificar a seção "Automações mais eficientes".
+
+## Resultado esperado
+O sistema deve apresentar os resultados da inteligência de forma legível, com indicadores e registros referentes ao período selecionado.
+
+## Resultado obtido
+Com o período "Últimos 7 dias" selecionado, a tela apresentou 4 automações executadas, 4 relatórios enviados, 0 alunos em risco identificados, 0 alunos com frequência em queda, 0 aniversariantes, 0 avaliações vencendo, 44 alunos inadimplentes monitorados e frequência média de 0,0 dias por semana.
+
+A seção "O que o Sifit identificou" apresentou quatro registros de risco de evasão, realizados na terça-feira, com 0 alunos em alto risco, 23 em médio risco e 0 em baixo risco. A seção "Inteligência Sifit" informou que a academia possui 23 alunos com risco de evasão e 44 alunos inadimplentes monitorados.
+
+A seção "Automações mais eficientes" apresentou a automação "Risco de evasão" com 4 execuções, 92 identificações e última execução na terça-feira às 00:55.
+
+As informações de execução e de alunos em médio risco são coerentes com a Central de Automações (CT114).
+
+## Status
+Aprovado.
+
+## Observação
+O indicador "Alunos em risco identificados" apresentou 0, enquanto a mesma tela informou 23 alunos com risco de evasão. A divergência será analisada no CT117.
+
+Os demais períodos de consulta não foram verificados.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/44308ef9-bf95-4689-92a0-a2fe0555cbdf)
