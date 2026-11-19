@@ -1,0 +1,43 @@
+# CT093 - Filtro de prospecção
+
+## Objetivo
+Verificar se os filtros da tela de Prospecção apresentam somente os leads correspondentes aos critérios informados.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Prospecção.
+- Existência de leads cadastrados em estágios diferentes.
+
+## Passos para execução
+1. Acessar o menu Comercial > Prospecção.
+2. Observar a listagem completa de leads.
+3. Selecionar o estágio "Interessado" no filtro Estágio.
+4. Retornar o filtro Estágio para "Todos".
+5. Informar parte do nome de um lead no campo Buscar lead.
+6. Clicar em "Limpar".
+7. Verificar a listagem apresentada após cada ação.
+
+## Resultado esperado
+O sistema deve apresentar somente os leads correspondentes ao filtro aplicado e restaurar a listagem completa ao remover os filtros.
+
+## Resultado obtido
+A listagem inicial apresentava três leads: código 1 (estágio "Novo Contato") e códigos 2 e 3 (estágio "Interessado").
+
+O filtro Estágio apresentou as opções Todos, Novo Contato, Interessado, Fez Aula Experimental, Proposta e Fechado.
+
+Ao selecionar "Interessado", o sistema apresentou somente os leads de códigos 2 e 3. Ao retornar para "Todos", os três leads voltaram a ser exibidos.
+
+Na pesquisa pelo termo "ti", o sistema apresentou somente o lead "Roberto Ti" (código 3).
+
+Ao clicar em "Limpar", o campo de pesquisa foi esvaziado e a listagem completa foi restaurada.
+
+## Status
+Aprovado.
+
+## Observação
+Não foram testados o filtro "Novo Contato" nem a pesquisa por código.
+
+Os indicadores da tela (Leads, Novos Contatos e Interessados) permaneceram inalterados durante a aplicação dos filtros, apresentando os totais gerais.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/dd93ea68-6dc2-4d29-99ad-cd6266f9ba63)
