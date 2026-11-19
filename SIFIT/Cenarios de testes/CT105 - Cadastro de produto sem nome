@@ -1,0 +1,36 @@
+# CT105 - Cadastro de produto sem nome
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de um produto quando o campo Nome não é preenchido.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Produtos.
+
+## Passos para execução
+1. Acessar o menu Gestão > Produtos.
+2. Observar os indicadores e a listagem.
+3. Clicar em "Novo".
+4. Manter o campo Nome vazio.
+5. Preencher Status, Descrição, Tipo e Preço.
+6. Clicar em "Salvar".
+7. Verificar os indicadores e a listagem.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Nome é obrigatório.
+
+## Resultado obtido
+Antes do cadastro, a tela apresentava 4 produtos, todos ativos, sendo 2 para venda. A listagem já continha um produto sem nome (código 7).
+
+Com o campo Nome vazio, Status "Ativo", Descrição "whay", Tipo "Venda" e Preço 100, foi acionado o botão "Salvar". O sistema não apresentou mensagem de validação e fechou o formulário.
+
+O produto foi registrado com o código 9, sem nome, tipo "Venda", valor R$ 100 e status "Ativo". Os indicadores passaram a apresentar 5 produtos, 5 ativos e 3 para venda.
+
+## Status
+Reprovado.
+
+## Bug relacionado
+BUG017 - Registros ativos aparecem sem nome, indicando possível ausência de validação.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/29911108-c959-4f1c-9f5c-85accebd9532)
