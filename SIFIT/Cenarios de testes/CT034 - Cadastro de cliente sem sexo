@@ -1,0 +1,35 @@
+# CT034 - Cadastro de cliente sem sexo
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de um cliente quando o campo obrigatório Sexo não é selecionado.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao módulo Clientes.
+
+## Passos para execução
+1. Acessar o menu Clientes.
+2. Clicar em "Novo Cliente".
+3. Preencher Nome, Status e Data de Nascimento com dados válidos.
+4. Manter o campo Sexo na opção "Selecione".
+5. Clicar em "Cadastrar Cliente".
+6. Observar a resposta do sistema.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Sexo é obrigatório.
+
+## Resultado obtido
+Com os campos Nome ("Cliente teste"), Status ("Inativo") e Data de Nascimento preenchidos e o campo Sexo na opção "Selecione", foi acionado o botão "Cadastrar Cliente".
+
+O sistema permaneceu na tela de cadastro, destacou o campo Sexo e apresentou a mensagem "Preencha o Sexo".
+
+Entretanto, as mensagens "Preencha o nome da pessoa" e "Preencha o Status", provenientes de tentativas anteriores, continuaram sendo exibidas abaixo dos respectivos campos, mesmo com ambos preenchidos.
+
+## Status
+Aprovado com ressalva — cadastro bloqueado pela ausência do Sexo, mas mensagens de validação anteriores permaneceram indevidamente na tela.
+
+## Bug relacionado
+BUG002 - Mensagens de validação permanecem após o preenchimento dos campos.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/21510e74-bb0c-4ec7-8ccb-62acbbac4d5a)
