@@ -1,0 +1,35 @@
+# CT101 - Consulta de funções
+
+## Objetivo
+Verificar se a tela de Funções apresenta os registros cadastrados e se a pesquisa por nome retorna as funções correspondentes.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Funções.
+- Existência de funções cadastradas.
+
+## Passos para execução
+1. Acessar o menu Gestão > Funções.
+2. Observar os indicadores e a listagem.
+3. Informar parte do nome de uma função no campo Nome.
+4. Clicar em "Buscar".
+5. Abrir a função encontrada pelo ícone de visualização.
+6. Fechar a visualização e remover o termo pesquisado.
+
+## Resultado esperado
+O sistema deve apresentar as funções cadastradas, retornar somente os registros correspondentes à pesquisa e exibir na visualização os mesmos dados apresentados na listagem.
+
+## Resultado obtido
+A tela apresentou 13 funções cadastradas, sendo 9 internas, 9 com opção de personal e 5 avaliadores.
+
+Na pesquisa pelo termo "caixa", o sistema apresentou somente a função de código 9 ("Caixa"), do tipo Externo, com indicação de Personal "Sim" e Avaliador "Não", e o total de 1 registro.
+
+Ao abrir a função, a tela de visualização apresentou os mesmos dados exibidos na listagem.
+
+Após fechar a visualização e remover o termo pesquisado, a listagem completa foi restaurada.
+
+## Status
+Aprovado.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/7dad7d4e-5e36-4e70-a5ac-b7dc72a36683)
