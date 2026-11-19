@@ -1,0 +1,43 @@
+# CT103 - Consulta de tipos de documentos
+
+## Objetivo
+Verificar se a tela de Tipos de Documentos apresenta os registros cadastrados, se a pesquisa por nome retorna os tipos correspondentes e se as informações são exibidas de forma legível.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Tipos de Documentos.
+- Existência de tipos de documentos cadastrados.
+
+## Passos para execução
+1. Acessar o menu Gestão > Tipos de Documentos.
+2. Observar os indicadores, a listagem e a legibilidade dos textos.
+3. Informar parte do nome de um tipo de documento no campo Nome.
+4. Acionar a pesquisa.
+5. Abrir o registro encontrado pelo ícone de visualização.
+6. Fechar a visualização e remover o termo pesquisado.
+
+## Resultado esperado
+O sistema deve apresentar os tipos de documentos cadastrados, retornar somente os registros correspondentes à pesquisa e exibir os textos com contraste adequado.
+
+## Resultado obtido
+A tela, no tema Claro, apresentou 6 tipos de documentos, sendo 4 aplicados a Fornecedor e 2 a Colaborador.
+
+Na pesquisa pelo termo "vale", o sistema apresentou somente o registro de código 2 ("vale"), com aplicação "Conta / Fornecedor", e o total de 1 registro. A tela de visualização apresentou os mesmos dados da listagem.
+
+Após remover o termo pesquisado, a listagem completa foi restaurada.
+
+No tema Claro, os textos da tela foram exibidos com estilo semelhante ao das demais telas do sistema e permaneceram legíveis na gravação.
+
+## Status
+Aprovado com ressalva — consulta funcionando. O contraste no tema Escuro não foi verificado.
+
+## Observação
+Não foi possível confirmar nem descartar o problema registrado no BUG018, pois a tela não foi verificada no tema Escuro.
+
+Os rótulos dos campos de pesquisa são apresentados sem acentuação ("Codigo" e "Aplicacao").
+
+## Bug relacionado
+BUG018 - Tela apresenta contraste ruim, dificultando a leitura.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/9a9cc424-7f69-42d5-b724-7bbad9a289e9)
