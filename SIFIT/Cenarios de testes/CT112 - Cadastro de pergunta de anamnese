@@ -1,0 +1,37 @@
+# CT112 - Cadastro de pergunta de anamnese
+
+## Objetivo
+Verificar se o sistema SIFIT permite cadastrar uma pergunta de anamnese e apresentá-la na listagem.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso à tela Perguntas Anamnese.
+
+## Passos para execução
+1. Acessar a tela Perguntas Anamnese.
+2. Observar os indicadores e a listagem.
+3. Clicar em "Nova Pergunta".
+4. Preencher Nome, Status, Pergunta e Tipo Resposta.
+5. Clicar em "Salvar".
+6. Verificar a listagem e os indicadores.
+
+## Resultado esperado
+O sistema deve salvar a pergunta, apresentá-la na listagem e atualizar os indicadores.
+
+## Resultado obtido
+Antes do cadastro, a tela apresentava 17 perguntas, todas ativas.
+
+A pergunta foi preenchida com o Nome "Teste de QA", Status "Ativo", Pergunta "O que é QA" e Tipo Resposta "Sim e Não". Após clicar em "Salvar", o formulário foi fechado e os indicadores passaram a apresentar 18 perguntas ativas.
+
+A pergunta foi exibida na listagem com o código 23, tipo de resposta "Sim / Não" e status "Ativo".
+
+## Status
+Aprovado.
+
+## Observação
+O formulário de cadastro de pergunta não apresenta campo para vinculação a uma categoria de anamnese.
+
+Após o cadastro, a tela Categorias de Anamnese continuou apresentando o indicador "Com perguntas" igual ao total de categorias (7), incluindo a categoria "Saude QA", que não possui perguntas vinculadas.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/0a6b0f43-2e82-4ba1-adc3-889ee1da00d3)
