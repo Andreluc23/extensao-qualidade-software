@@ -1,0 +1,33 @@
+# CT095 - Cadastro de plano sem nome
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de um plano quando o campo Nome não é preenchido.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Comercial > Planos.
+
+## Passos para execução
+1. Acessar o menu Comercial > Planos.
+2. Clicar em "Novo Plano".
+3. Manter o campo Nome vazio.
+4. Preencher Grupo, Status, Cobrança, Valor Mensal e Valor Matrícula.
+5. Clicar em "Salvar Plano".
+6. Observar a resposta do sistema.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Nome é obrigatório.
+
+## Resultado obtido
+Com o campo Nome vazio e os demais campos preenchidos (Grupo "Treino Livre", Status "Ativo", Cobrança "Mensalidade recorrente", Valor Mensal e Valor Matrícula de R$ 100,00), foi acionado o botão "Salvar Plano".
+
+O formulário permaneceu aberto, o campo Nome foi destacado e foi apresentado o aviso "Preencha este campo.".
+
+## Status
+Aprovado.
+
+## Observação
+O aviso apresentado corresponde à validação nativa do navegador para campos obrigatórios. Não foi verificado se o servidor também rejeita o cadastro de planos sem nome.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/377edc75-9cb8-4945-b9dd-a9435b3634fc)
