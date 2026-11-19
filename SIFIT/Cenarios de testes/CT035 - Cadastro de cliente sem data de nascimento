@@ -1,0 +1,35 @@
+# CT035 - Cadastro de cliente sem data de nascimento
+
+## Objetivo
+Verificar se o sistema SIFIT impede o cadastro de um cliente quando o campo obrigatório Data de Nascimento não é preenchido.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao módulo Clientes.
+
+## Passos para execução
+1. Acessar o menu Clientes.
+2. Clicar em "Novo Cliente".
+3. Preencher Nome, Status e Sexo com dados válidos.
+4. Manter o campo Data de Nascimento vazio.
+5. Clicar em "Cadastrar Cliente".
+6. Observar a resposta do sistema.
+
+## Resultado esperado
+O sistema deve impedir o cadastro e indicar que o campo Data de Nascimento é obrigatório.
+
+## Resultado obtido
+Com os campos Nome ("Cliente teste"), Status ("Inativo") e Sexo ("Masculino") preenchidos e o campo Data de Nascimento vazio, foi acionado o botão "Cadastrar Cliente".
+
+O sistema permaneceu na tela de cadastro, destacou o campo Data de Nascimento e apresentou a mensagem "Preencha a Data de Nascimento".
+
+Entretanto, as mensagens "Preencha o nome da pessoa", "Preencha o Status" e "Preencha o Sexo", provenientes de tentativas anteriores, continuaram sendo exibidas abaixo dos respectivos campos, mesmo com todos preenchidos.
+
+## Status
+Aprovado com ressalva — cadastro bloqueado pela ausência da Data de Nascimento, mas mensagens de validação anteriores permaneceram indevidamente na tela.
+
+## Bug relacionado
+BUG002 - Mensagens de validação permanecem após o preenchimento dos campos.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/af4655c7-7e68-419c-b5c9-5b3c001d2898)
