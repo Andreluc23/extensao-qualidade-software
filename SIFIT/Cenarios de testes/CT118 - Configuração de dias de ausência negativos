@@ -1,0 +1,37 @@
+# CT118 - Configuração de dias de ausência negativos
+
+## Objetivo
+Verificar se o sistema SIFIT impede a configuração de valores negativos no campo "Dias para contar cliente como ausente".
+
+## Pré-condições
+- Usuário autenticado no SIFIT com acesso às Configurações.
+- Acesso à aba Home do menu Configurações.
+
+## Passos para execução
+1. Acessar o menu Configurações.
+2. Selecionar a aba Home.
+3. Localizar o campo "Dias para contar cliente como ausente".
+4. Informar um valor negativo.
+5. Clicar em "Salvar Configurações".
+6. Observar a resposta do sistema.
+
+## Resultado esperado
+O sistema deve aceitar somente números inteiros positivos e informar quando um valor inválido for inserido.
+
+## Resultado obtido
+O campo "Dias para contar cliente como ausente" foi alterado para o valor -10. Ao clicar em "Salvar Configurações", o sistema não apresentou mensagem de validação, de confirmação ou de erro, e o campo permaneceu com o valor informado.
+
+Em gravação realizada anteriormente na mesma tela (CT119), o campo apresentava o valor -120 já registrado, demonstrando que o sistema armazena valores negativos nessa configuração.
+
+## Status
+Reprovado.
+
+## Observação
+A página não foi recarregada após o salvamento do valor -10.
+
+## Bug relacionado
+BUG021 - Campo "Dias para contar cliente como ausente" apresenta valor negativo (-120).
+
+## Evidência
+- [Visualizar gravação no Jam](https://jam.dev/c/ee77c28e-5df3-4cde-83d6-888f809f08ad)
+- [Valor -120 registrado (CT119)](https://jam.dev/c/4888d390-956e-49c8-9975-b03a023f01f5)
