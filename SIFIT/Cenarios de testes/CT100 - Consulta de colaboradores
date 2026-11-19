@@ -1,0 +1,40 @@
+# CT100 - Consulta de colaboradores
+
+## Objetivo
+Verificar se a tela de Colaboradores apresenta os registros cadastrados e se a pesquisa por nome retorna os colaboradores correspondentes.
+
+## Pré-condições
+- Usuário autenticado no SIFIT.
+- Acesso ao menu Gestão > Colaboradores.
+- Existência de colaboradores cadastrados.
+
+## Passos para execução
+1. Acessar o menu Gestão > Colaboradores.
+2. Observar os indicadores e a listagem.
+3. Informar parte de um nome no campo Nome.
+4. Clicar em "Buscar".
+5. Abrir um colaborador pelo ícone de visualização.
+6. Comparar os dados do perfil com a listagem.
+
+## Resultado esperado
+O sistema deve apresentar os colaboradores cadastrados, retornar somente os registros correspondentes à pesquisa e exibir no perfil os mesmos dados apresentados na listagem.
+
+## Resultado obtido
+A tela apresentou 53 colaboradores cadastrados, 50 ativos e 4 personais.
+
+Na pesquisa pelo termo "leo", o sistema apresentou somente os colaboradores de códigos 9 ("Leonardo Maciel") e 10 ("leo"), ambos com status "Ativo".
+
+Ao abrir o colaborador de código 10, o sistema direcionou para a tela "Perfil do Colaborador", com status "Ativo", data de cadastro, contatos e indicadores de alunos, recebimentos e funções.
+
+Entretanto, com apenas dois resultados e exibição de 50 registros por página, a paginação apresentou as páginas "1" e "2" e o botão "Próxima".
+
+## Status
+Aprovado com ressalva — pesquisa e visualização funcionando, mas paginação apresentou mais de uma página para apenas dois resultados.
+
+## Observação
+A segunda página da paginação não foi acessada para verificar seu conteúdo. Comportamento semelhante foi observado na listagem de Clientes.
+
+A tela não apresenta filtros por Status ou Função.
+
+## Evidência
+[Visualizar gravação no Jam](https://jam.dev/c/ce110e38-a103-4c42-9712-6ffa329337fa)
