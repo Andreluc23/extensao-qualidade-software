@@ -10,7 +10,7 @@ Repositório destinado à documentação do projeto de Extensão da disciplina d
 | Claudio Roberto Vieira Filho | 240032 |
 | André Lucas Camargo | 14156 |
 | Leonardo Mirandola Bernardo | 14559 |
-| Felipe do Nascimento | A informar |
+| Felipe do Nascimento | 14568 |
 
 ## Sistema testado
 
