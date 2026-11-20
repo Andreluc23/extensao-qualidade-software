@@ -36,4 +36,4 @@ Necessário aplicar `white-space: nowrap;` na célula da coluna de valores.
 
 ## Evidência
 
-
+https://jam.dev/c/a65aabb6-c22a-418b-8563-26f0c24a2f82
